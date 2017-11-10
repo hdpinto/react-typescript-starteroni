@@ -1,0 +1,103 @@
+{
+  "name": "react-typescript-starter",
+  "version": "1.0.0",
+  "description": "React typescript starter pack, front end only",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@types/core-js": "^0.9.42",
+    "@types/jest": "^21.1.5",
+    "@types/localforage": "0.0.34",
+    "@types/react": "^15.0.38",
+    "@types/react-addons-test-utils": "^0.14.19",
+    "@types/react-dom": "^15.5.1",
+    "@types/react-redux": "^4.4.46",
+    "@types/react-router": "^4.0.14",
+    "@types/react-router-dom": "^4.0.7",
+    "@types/redux-persist": "^4.3.1",
+    "autoprefixer": "^7.1.2",
+    "awesome-typescript-loader": "^3.2.1",
+    "axios": "^0.16.2",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-react": "^6.24.1",
+    "core-js": "^2.5.0",
+    "cpx": "^1.5.0",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "foundation-sites": "^6.4.1",
+    "jest": "^21.0.0",
+    "json-loader": "^0.5.7",
+    "localforage": "^1.5.3",
+    "moment": "^2.18.1",
+    "node-sass": "^4.6.0",
+    "postcss-loader": "^2.0.8",
+    "react": "15.5.4",
+    "react-addons-test-utils": "^15.6.0",
+    "react-dom": "15.5.4",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.2",
+    "react-router-dom": "^4.1.2",
+    "redux": "^3.7.2",
+    "redux-persist": "^4.8.3",
+    "redux-thunk": "^2.2.0",
+    "sass-loader": "^6.0.6",
+    "source-map-loader": "^0.2.1",
+    "style-loader": "^0.18.2",
+    "ts-jest": "^20.0.10",
+    "tslint": "^5.5.0",
+    "typescript": "^2.4.1",
+    "webpack": "^3.3.0",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-jest": "^21.2.0",
+    "husky": "^0.14.3",
+    "lite-server": "^2.3.0",
+    "webpack-bundle-analyzer": "^2.9.0"
+  },
+  "scripts": {
+    "test": "jest --watch",
+    "start": "npm run dev",
+    "start-web": "lite-server",
+    "start-mac": "npm run dev-watch",
+    "build": "webpack --config webpack.prod.config.js --display-error-details && npm run copy-static",
+    "copy-static": "cpx ./fonts/**/* ./webroot/secure/fonts --include-empty-dirs && cpx ./img/**/* ./webroot/secure/img",
+    "dev-build": "jest && webpack --progress --colors --config webpack.dev.config.js && npm run copy-static",
+    "dev-watch": "webpack --progress --colors --watch --config webpack.dev.config.js",
+    "dev": "start npm test && npm run dev-watch",
+    "coverage": "jest --coverage",
+    "tslint": "tslint --project . --fix --type-check",
+    "precommit": "npm run tslint",
+    "prepush": "npm run coverage"
+  },
+  "jest": {
+    "setupFiles": [
+      "./setupJest.js"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "mapCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.(ts|tsx)",
+      "!src/typings.d.ts"
+    ],
+    "coverageReporters": [
+      "json",
+      "html"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js",
+      "\\.(js|jsx$)": "babel-jest"
+    },
+    "unmockedModulePathPatterns": [
+      "react"
+    ],
+    "testRegex": "/__tests__/.*\\.(ts|tsx|js)$"
+  },
+  "author": "Herlander Pinto",
+  "license": "MIT"
+}

@@ -1,0 +1,5 @@
+# use shell glob syntax (can use regexp if we need to)
+syntax: glob
+
+#build artifcats
+dist/*

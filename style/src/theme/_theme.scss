@@ -1,0 +1,13 @@
+/* style/src/theme/_theme.scss */
+
+.button.hollow {
+    border: 1px solid #EAECF1;
+    font-weight: 600;
+    &:hover {
+        border: 1px solid #EAECF1;
+    }
+}
+
+.button.round {
+    border-radius: 1000px;
+}

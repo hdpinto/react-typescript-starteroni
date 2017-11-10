@@ -1,0 +1,26 @@
+/* style/src/layout/_layout.scss */
+$small: map-get($map: $breakpoints, $key: small);
+$medium: map-get($map: $breakpoints, $key: medium);
+$large: map-get($map: $breakpoints, $key: large);
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.medium-shrink {
+    @media screen and (min-width: map-get($breakpoints, medium)) {
+        @include flex-grid-column($columns: shrink);
+    }
+}
+.large-shrink {
+    @media screen and (min-width: map-get($breakpoints, large)) {
+        @include flex-grid-column($columns: shrink);
+    }
+}
