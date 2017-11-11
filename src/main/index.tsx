@@ -13,7 +13,7 @@ ReactDOM.render(
   <Provider store={store("react-starter")} >
      <BrowserRouter>
       <Switch>
-        <Route path="/:path?" component={AppContainer}/>
+        <Route path="/:page?" component={AppContainer}/>
       </Switch>
     </BrowserRouter>
   </Provider>,
