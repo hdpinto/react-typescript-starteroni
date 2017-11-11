@@ -5,8 +5,6 @@
 ```
 style
 |   readme.md
-└───dist
-|   |   main.css        // compiled file
 └───src
     |   _cdn.scss       // combines base/layout/module/state/theme
     |   _settings.scss  // main project settings
