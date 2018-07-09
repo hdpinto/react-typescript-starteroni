@@ -1,4 +1,4 @@
-## CDN scss syntax guide (_Work In Progress_)
+## SCSS syntax guide (_Work In Progress_)
 - See [SMACSS](https://smacss.com/book/)
 
 ### Folder Structure
@@ -6,7 +6,7 @@
 style
 |   readme.md
 └───src
-    |   _cdn.scss       // combines base/layout/module/state/theme
+    |   _app.scss       // combines base/layout/module/state/theme
     |   _settings.scss  // main project settings
     |   _shame.scss     // bad or out-of-form scss, to be refactored
     |   main.scss       // main compiled file
