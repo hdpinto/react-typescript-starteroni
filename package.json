@@ -78,13 +78,10 @@
   },
   "scripts": {
     "test": "jest --watch",
-    "start": "npm run dev",
-    "start-mac": "npm run dev-watch",
     "build": "webpack --config webpack.prod.config.js --display-error-details && npm run copy-static",
     "copy-static": "cpx ./fonts/**/* ./webroot/secure/fonts --include-empty-dirs && cpx ./img/**/* ./webroot/secure/img",
     "dev-build": "jest && webpack --progress --colors --config webpack.dev.config.js && npm run copy-static",
     "dev-watch": "webpack --progress --colors --watch --config webpack.dev.config.js",
-    "dev": "start npm test && npm run dev-watch",
     "watch": "npm run dev-watch",
     "deploy-dev": "npm run dev-build",
     "deploy": "npm run build",
