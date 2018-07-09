@@ -16,6 +16,7 @@ bin/
 jest/
 .vscode/
 .chrome/
+.cache/
 
 # Mac OS X artifacts
 
