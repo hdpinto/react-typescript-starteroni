@@ -1,6 +1,6 @@
-import * as localForage from "localforage";
+// import * as localForage from "localforage";
 import { applyMiddleware, compose, createStore, Middleware } from "redux";
-import { autoRehydrate, persistStore } from "redux-persist";
+// import { autoRehydrate, persistStore } from "redux-persist";
 import thunk from "redux-thunk";
 
 // Remove for prod
@@ -21,11 +21,13 @@ export const store = (prefix: string) => {
       // autoRehydrate(),
       ),
     );
+    /*
   persistStore(localStore, {
     whitelist: [""], // don't persist anything yet, add reducers here as you want them to be persisted
     keyPrefix: `${prefix}_`,
     storage: localForage },
   );
+  */
 
   return localStore;
 };
