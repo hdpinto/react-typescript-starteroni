@@ -22,7 +22,7 @@ A react & typescript starter project.
  
  ### Installing
  
- 1. Clone the repository or download it  and initialize your own git repo, or use the following commands:
+ 1. Clone the repository
  
  ```
  cd /your/project/directory
