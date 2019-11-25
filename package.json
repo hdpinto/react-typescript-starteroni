@@ -73,7 +73,7 @@
     "ts-jest": "^21.0.0",
     "enzyme-adapter-react-16": "^1.0.4",
     "react-test-renderer": "16.1.0",
-    "webpack-bundle-analyzer": "^2.9.0",
+    "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.0.8"
   },
   "scripts": {
