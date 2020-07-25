@@ -4,8 +4,7 @@ A react & typescript starter project.
 
 # !!! Deprecated !!!
 
-This repository is no longer maintained
-Please use [react-typescript-spa-starter](https://github.com/hdpinto/react-typescript-spa-starter) instead
+This repository is no longer maintained. Please use [react-typescript-spa-starter](https://github.com/hdpinto/react-typescript-spa-starter) instead.
 
 ## Frameworks & Toolchain
 
