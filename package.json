@@ -59,7 +59,7 @@
     "tslint": "^5.5.0",
     "typescript": "^2.9.1",
     "url-loader": "^1.0.1",
-    "validator": "8.0.0",
+    "validator": "13.7.0",
     "webpack": "4.4.0",
     "whatwg-fetch": "^2.0.3"
   },
